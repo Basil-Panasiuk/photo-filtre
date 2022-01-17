@@ -1,4 +1,4 @@
-let base = 'https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/';
+let base = './assets/images/';
 var now = new Date();
 let photo = document.querySelector('.photo');
 let btnNext = document.querySelector('.btn-next');
@@ -7,7 +7,7 @@ const hour = now.getHours();
 if(hour >=6 && hour <=11) {
     base += 'morning/';
 } else if (hour >=12 && hour <=17) {
-    base += 'day/';
+    base += 'afternoon/';
 } else if (hour >=16 && hour <=23) {
     base += 'evening/';
 } else if (hour >=0 && hour <=5) {
